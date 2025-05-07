@@ -18,6 +18,11 @@ switch ($uri) {
         $controller = new AuthController();
         $controller->register();
         break;
+        case '/registrer':
+            require_once __DIR__ . '/../app/controllers/AuthController.php';
+            $controller = new AuthController();
+            $controller->registrer();
+            break;
     case '/chat':
         require_once __DIR__ . '/../app/controllers/ChatController.php';
         $controller = new ChatController();
