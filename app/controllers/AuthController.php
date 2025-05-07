@@ -19,11 +19,11 @@ class AuthController {
             $key = "clave_secreta_segura";
             $payload = [
                 "username" => $_POST['username'],
-                "exp" => time() + 60 // 1 minutos
+                "exp" => time() + 600 // 10 minutos
             ];
     
             $jwt = JWT::encode($payload, $key, 'HS256');
-            setcookie("token", $jwt, time() + 60, "/"); // cookie válida por 1 min
+            setcookie("token", $jwt, time() + 600, "/"); // cookie válida por 10 min
     
             header("Location: /chat");
         } else {

@@ -48,5 +48,7 @@
         </div>
     </footer>
 
+
+    <script src="/js/inactividad.js"></script>
 </body>
 </html>
