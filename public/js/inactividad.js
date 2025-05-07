@@ -37,3 +37,4 @@ function reiniciarTemporizador() {
 reiniciarTemporizador(); // Inicializa
 
 
+

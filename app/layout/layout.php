@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
         <div class="container">
-            <a class="navbar-brand" href="/">MiChat</a>
+            <a class="navbar-brand" href="/">Mi Chat</a>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <?php if (isset($_SESSION['username'])): ?>
@@ -18,7 +18,7 @@
                             <a class="nav-link" href="/chat">Chat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Cerrar sesión</a>
+                            <a class="nav-link" id="cerrarSesion" href="/">Cerrar sesión</a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
@@ -44,11 +44,11 @@
     <!-- Footer -->
     <footer class="bg-light text-center py-3 mt-4 border-top">
         <div class="container">
-            <span class="text-muted">&copy; <?= date('Y') ?> MiChat - Todos los derechos reservados.</span>
+            <span class="text-muted">&copy; <?= date('Y') ?> Mi Chat - Todos los derechos reservados.</span>
         </div>
     </footer>
 
 
-    <script src="/js/inactividad.js"></script>
+  <script src="/js/cerrarsesion.js"></script>
 </body>
 </html>
